@@ -20,4 +20,4 @@ output: [ 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e', ' ',
 'm', 'a', 'k', 'e', 's', ' ',
 'p', 'e', 'r', 'f', 'e', 'c', 't' ]**
 
-I spend 1H:45MM traying to solve this algorithm in the most efficient manner. The final result runs on O(N2). You can read the code [HERE](https://github.com/MerliMejia/Dynamic-programming-practices/blob/master/Reversal%20sentences/src/main.java) 
+I spend 1H:45MM trying to solve this algorithm in the most efficient manner. The final result runs on O(N2). You can read the code [HERE](https://github.com/MerliMejia/Dynamic-programming-practices/blob/master/Reversal%20sentences/src/main.java) 
