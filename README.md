@@ -104,4 +104,12 @@ The hourglass with the maximum sum () is:
 |  |2| |
 |1| 2 |4|
 
+**Solution Time complexity analysis**
+
+![enter image description here](https://scontent.flrm1-1.fna.fbcdn.net/v/t1.15752-9/61583884_664046847399563_7414027878418874368_n.png?_nc_cat=111&_nc_ht=scontent.flrm1-1.fna&oh=afdf4bf57536faf011d6b073aac06a3b&oe=5D5BFB71)
+
+Based on the graphic you can see how the worst possible scenario will be O=(n)
+
 [**Algorithm source**](https://www.hackerrank.com/challenges/2d-array/problem?h_r=profile)
+
+[**Solution code**]([https://github.com/MerliMejia/Dynamic-programming-practices/blob/master/2D%20Array%20-%20DS/javaScript/main.js](https://github.com/MerliMejia/Dynamic-programming-practices/blob/master/2D%20Array%20-%20DS/javaScript/main.js))
