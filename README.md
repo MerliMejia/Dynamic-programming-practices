@@ -1,3 +1,4 @@
+
 # Dynamic-programming-practices
 In this repository I will upload a series of algorithms and solutions using different techniques to achieve the best performance.
 
@@ -26,29 +27,32 @@ I spend 1H:45MM trying to solve this algorithm in the most efficient manner. The
 
 Given a **6x6** 2D Array, :
 
-1| 1| 1| 0| 0| 0|
-0| 1| 0| 0| 0| 0|
-1| 1| 1| 0| 0| 0|
-0| 0| 0| 0| 0| 0|
-0| 0| 0| 0| 0| 0|
-0| 0| 0| 0| 0| 0|
+|1| 1| 1| 0| 0| 0|
+|-|-|-|-|-|-|
+|0|1 |0| 0 |0| 0|
+|1| 1| 1| 0| 0| 0|
+|0| 0| 0| 0| 0 |0|
+|0| 0| 0| 0| 0 |0|
+|0| 0| 0| 0| 0 |0|
 
 We define an **A** hourglass in  to be a subset of values with indices falling in this pattern in **arr**'s graphical representation:
 
-a b c
-  d
-e f g
+|a |b |c|
+| - | - | -
+|  | d|
+|e| f| g|
 
 There are 16 hourglasses in arr, and an hourglass sum is the sum of an hourglass' values. Calculate the hourglass sum for every hourglass in arr, then print the maximum hourglass sum.
 
 For example, given the 2D array:
 
--9 -9 -9  1 1 1 
- 0 -9  0  4 3 2
--9 -9 -9  1 2 3
- 0  0  8  6 6 0
- 0  0  0 -2 0 0
- 0  0  1  2 4 0
+|-9| -9| -9|  1| 1| 1|
+| - | - | - | - | - | - | 
+| 0| -9|  0|  4| 3| 2|
+|-9| -9| -9|  1| 2| 3|
+| 0|  0|  8|  6| 6| 0|
+| 0|  0|  0| -2| 0| 0|
+| 0|  0|  1|  2| 4| 0|
 We calculate the following 16 hourglass values:
 
 -63, -34, -9, 12, 
@@ -58,9 +62,10 @@ We calculate the following 16 hourglass values:
 
 Our highest hourglass value is 28 from the hourglass:
 
-0 4 3
-  1
-8 6 6
+|0 |4| 3|
+|-|-|-
+| | 1|
+|8| 6| 6|
 
 hourglassSum has the following parameter(s):
 
@@ -74,12 +79,13 @@ Print the largest (maximum) hourglass sum found in arr.
 
 **Sample Input**
 
-1 1 1 0 0 0
-0 1 0 0 0 0
-1 1 1 0 0 0
-0 0 2 4 4 0
-0 0 0 2 0 0
-0 0 1 2 4 0
+|1 |1| 1 |0| 0 |0|
+|-|-|-|-|-|-|
+|0 |1 |0 |0 |0 |0|
+|1 |1 |1 |0 |0 |0|
+|0 |0 |2 |4 |4 |0|
+|0 |0 |0 |2 |0 |0|
+|0| 0 |1| 2 |4| 0|
 
 **Sample Output**
 
@@ -93,8 +99,9 @@ Explanation
 
 The hourglass with the maximum sum () is:
 
-2 4 4
-  2
-1 2 4
+|2 |4 |4|
+|-|-|-|
+|  |2| |
+|1| 2 |4|
 
-[**Algorithm details**](https://www.hackerrank.com/challenges/2d-array/problem?h_r=profile)
+[**Algorithm source**](https://www.hackerrank.com/challenges/2d-array/problem?h_r=profile)
