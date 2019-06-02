@@ -26,13 +26,12 @@ I spend 1H:45MM trying to solve this algorithm in the most efficient manner. The
 
 Given a **6x6** 2D Array, :
 
-| 1 | 1 | 1 | 0 | 0 | 0 |
--------------------------
-| 0 | 1 | 0 | 0 | 0 | 0 |
-1 1 1 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
+1| 1| 1| 0| 0| 0|
+0| 1| 0| 0| 0| 0|
+1| 1| 1| 0| 0| 0|
+0| 0| 0| 0| 0| 0|
+0| 0| 0| 0| 0| 0|
+0| 0| 0| 0| 0| 0|
 
 We define an **A** hourglass in  to be a subset of values with indices falling in this pattern in **arr**'s graphical representation:
 
