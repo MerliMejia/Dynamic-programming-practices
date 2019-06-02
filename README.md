@@ -21,3 +21,80 @@ output: [ 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e', ' ',
 'p', 'e', 'r', 'f', 'e', 'c', 't' ]**
 
 I spend 1H:45MM trying to solve this algorithm in the most efficient manner. The final result runs on O(N2). You can read the code [HERE](https://github.com/MerliMejia/Dynamic-programming-practices/blob/master/Reversal%20sentences/src/main.java) 
+
+## [2D Array - DS](https://github.com/MerliMejia/Dynamic-programming-practices/tree/master/2D%20Array%20-%20DS/javaScript)
+
+Given a **6x6** 2D Array, :
+
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+
+We define an **A** hourglass in  to be a subset of values with indices falling in this pattern in **arr**'s graphical representation:
+
+a b c
+  d
+e f g
+
+There are 16 hourglasses in arr, and an hourglass sum is the sum of an hourglass' values. Calculate the hourglass sum for every hourglass in arr, then print the maximum hourglass sum.
+
+For example, given the 2D array:
+
+-9 -9 -9  1 1 1 
+ 0 -9  0  4 3 2
+-9 -9 -9  1 2 3
+ 0  0  8  6 6 0
+ 0  0  0 -2 0 0
+ 0  0  1  2 4 0
+We calculate the following 16 hourglass values:
+
+-63, -34, -9, 12, 
+-10, 0, 28, 23, 
+-27, -11, -2, 10, 
+9, 17, 25, 18
+
+Our highest hourglass value is 28 from the hourglass:
+
+0 4 3
+  1
+8 6 6
+
+hourglassSum has the following parameter(s):
+
+arr: an array of integers
+
+**Input Format**
+
+Each of the  lines of inputs  contains  space-separated integers .
+
+Print the largest (maximum) hourglass sum found in arr.
+
+**Sample Input**
+
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0
+0 0 1 2 4 0
+
+**Sample Output**
+
+19
+
+Explanation
+
+ contains the following hourglasses:
+
+![Sample hourglasses](https://s3.amazonaws.com/hr-assets/0/1534256743-35b846ad4a-hourglasssum.png)
+
+The hourglass with the maximum sum () is:
+
+2 4 4
+  2
+1 2 4
+
+[**Algorithm details**](https://www.hackerrank.com/challenges/2d-array/problem?h_r=profile)
