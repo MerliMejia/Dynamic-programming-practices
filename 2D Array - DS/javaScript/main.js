@@ -2,73 +2,55 @@ class solution {
 
     hourglassSum(arr) {
 
-        console.log("\n\n\n\n\n")
-        var i = 0, a = 0, hg = 0, higer = 0;
+        var sum = 0, higer = 0, stop = false;
+        for (var i = 0; i < arr.length; i++) {
 
-        var hash = {};
-
-        var c = 0;
-        while (true) {
-            hash[hg] = 0
-            if (arr[a][i + 2] == undefined) {
-                i = 0;
-                a++;
+            for (var a = 0; a < arr[i].length; a++) {
+                sum = 0;
+                if (arr[i][a + 2] == undefined) {
+                    break;
+                }
+                if (arr[i + 2] == undefined || arr[i + 2][a + 2] == undefined) {
+                    stop = true;
+                    break
+                }
+                sum += arr[i][a];
+                sum += arr[i][a + 1];
+                sum += arr[i][a + 2];
+                sum += arr[i + 1][a + 1];
+                sum += arr[i + 2][a];
+                sum += arr[i + 2][a + 1];
+                sum += arr[i + 2][a + 2];
+                if(i == 0 && a == 0)
+                {
+                    higer = sum;
+                }else if(sum > higer)
+                {
+                    higer = sum;
+                }
+        
             }
-            if (arr[a + 2] == undefined || arr[a + 2][i + 2] == undefined) {
+            if (stop == true) {
                 break
             }
-
-            hash[hg] += arr[a][i]
-
-            hash[hg] += arr[a][i + 1]
-
-            hash[hg] += arr[a][i + 2]
-
-            hash[hg] += arr[a + 1][i + 1]
-
-            hash[hg] += arr[a + 2][i]
-
-            hash[hg] += arr[a + 2][i + 1]
-
-            hash[hg] += arr[a + 2][i + 2]
-
-            if (a == 0 && i == 0) {
-                higer = hash[hg]
-            } else {
-                if (hash[hg] > higer) {
-
-                    higer = hash[hg]
-
-                }
-
-            }
-
-
-            i++;
-            hg++;
-
-            c++;
-            console.log(c)
         }
-        return higer;
 
+        return higer;
     }
 
     main() {
-        var arr = Array(6);
+        var arr = Array(3);
 
 
-        for (var i = 0; i < 6; i++) {
-             arr[i] = new Array(6)
-             for (var a = 0; a < 6; a++) {
-                 arr[i][a] = Math.floor(Math.random() * (9 - (-9) + 1)) + (-9);
-                 console.log(arr[i][a])
-             }
-             console.log("\n")
-         }
+        for (var i = 0; i < 3; i++) {
+            arr[i] = new Array(3)
+            for (var a = 0; a < 3; a++) {
+                arr[i][a] = Math.floor(Math.random() * (9 - (-9) + 1)) + (-9);
+            }
+        }
 
         var result = this.hourglassSum(arr);
-        console.log(result)
+        console.log(result);
     }
 
     constructor() {
